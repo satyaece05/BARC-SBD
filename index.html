@@ -1366,6 +1366,25 @@ body::before{
   }
 }
 </style>
+<style id="in-shelter-gallery-fit">
+/* In Shelter gallery: consistent card/image boxes while preserving the complete image. */
+#gallery-shelter .gallery-grid{align-items:stretch}
+#gallery-shelter .gallery-item{display:flex;flex-direction:column;height:100%;overflow:hidden}
+#gallery-shelter .gallery-item img{
+  width:100%;
+  height:260px;
+  min-height:260px;
+  object-fit:contain;
+  object-position:center;
+  background:#f7f1e5;
+  border-radius:11px;
+  display:block;
+}
+#gallery-shelter .gallery-item figcaption{flex:0 0 auto}
+@media(max-width:600px){
+  #gallery-shelter .gallery-item img{height:260px;min-height:260px}
+}
+</style>
 <style id="requested-design-overrides">
 /* =========================================================
    REQUESTED HEADER / FOOTER IMAGE DESIGN
@@ -3679,6 +3698,18 @@ body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opac
 <figure class="gallery-item"><img alt="PP" src="PP..jpg"/><figcaption>PP</figcaption></figure>
 <figure class="gallery-item"><img alt="PP2" src="PP2.jpg"/><figcaption>PP2</figcaption></figure>
 <figure class="gallery-item"><img alt="PP3" src="PP3.jpg"/><figcaption>PP3</figcaption></figure>
+<figure class="gallery-item"><img alt="MCP01" src="MCP01.png"/><figcaption>MCP01</figcaption></figure>
+<figure class="gallery-item"><img alt="MCP04" src="MCP04.png"/><figcaption>MCP04</figcaption></figure>
+<figure class="gallery-item"><img alt="MCP05" src="MCP05.png"/><figcaption>MCP05</figcaption></figure>
+<figure class="gallery-item"><img alt="MCP06" src="MCP06.jpg"/><figcaption>MCP06</figcaption></figure>
+<figure class="gallery-item"><img alt="MCP07" src="MCP07.png"/><figcaption>MCP07</figcaption></figure>
+<figure class="gallery-item"><img alt="MCP09" src="MCP09.png"/><figcaption>MCP09</figcaption></figure>
+<figure class="gallery-item"><img alt="V&amp;T" src="V&amp;T.png"/><figcaption>V&amp;T</figcaption></figure>
+<figure class="gallery-item"><img alt="Dharm" src="Dharm.png"/><figcaption>Dharm</figcaption></figure>
+<figure class="gallery-item"><img alt="Humanity" src="Humanity.png"/><figcaption>Humanity</figcaption></figure>
+<figure class="gallery-item"><img alt="Demonity" src="Demonity.png"/><figcaption>Demonity</figcaption></figure>
+<figure class="gallery-item"><img alt="Helpbull" src="Helpbull.png"/><figcaption>Helpbull</figcaption></figure>
+<figure class="gallery-item"><img alt="sbd" src="sbd.png"/><figcaption>sbd</figcaption></figure>
 </div>
 <a aria-label="Back to top" class="back-to-top" href="#top" title="Back to top">↑</a>
 </article>
